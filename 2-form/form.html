@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Олег Глухов">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>1-form</title>
+</head>
+
+<body>
+    <main>
+        <form action="#">
+            <h1>Регистрация</h1>
+            <p>Уже есть аккаунт? <a href="№" target="_blank">Войти</a></p>
+            <!--Не понятно, моя компания это input или просто текст-->
+            <p>Моя компания</p>
+
+            <div>
+                <!--lable можно убрать-->
+
+                <input type="Text" placeholder="Имя" id="name" name="name" required title="Введите Имя">
+
+                <input type="Text" placeholder="Фамилия" id="Fname" name="Fname" required title="Введите Фамилие">
+            </div>
+
+            <div>
+                <input type="email" placeholder="E-mail" id="email" name="email" required title="Введите Email">
+            </div>
+
+            <button>Зарегистрироваться</button>
+            <div>
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">Я прочитал и принимаю <a href="#">Условия использования</a></label>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
