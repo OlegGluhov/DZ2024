@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Олег Глухов">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleform.css">
     <title>1-form</title>
 </head>
 
 <body>
     <main>
-        <form action="#">
+        <form action="#" class="heroForm">
             <h1>Регистрация</h1>
             <p>Уже есть аккаунт? <a href="№" target="_blank">Войти</a></p>
-            <!--Не понятно, моя компания это input или просто текст-->
-            <p>Моя компания</p>
 
+            <div>
+                <input type="Text" placeholder="Моя компания" id="mycompany" name="name" required
+                    title="Введите компанию">
+            </div>
             <div>
                 <!--lable можно убрать-->
 
@@ -30,7 +33,7 @@
             </div>
 
             <button>Зарегистрироваться</button>
-            <div>
+            <div class="agree">
                 <input type="checkbox" name="agree" id="agree">
                 <label for="agree">Я прочитал и принимаю <a href="#">Условия использования</a></label>
             </div>

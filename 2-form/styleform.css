@@ -1,0 +1,135 @@
+body {
+    background: linear-gradient(0deg, #F39494, #F39494),
+        linear-gradient(243.18deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0) 100%),
+        linear-gradient(243.43deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0) 82.03%);
+    margin: 0;
+}
+
+form {
+    background-color: #FFFEFE;
+}
+
+h1 {
+    color: #333333;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'open sasn', Arial,
+        sans-serif;
+    text-align: center;
+    padding: 72px 0 0 0;
+    margin: 0;
+
+}
+
+p {
+    color: #666666;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'open sasn', Arial,
+        sans-serif;
+    text-align: center;
+
+    margin: 0 172px 42px 172px;
+}
+
+a {
+    color: #089FE0;
+}
+
+
+input {
+    background: #F5F5F5;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'open sasn', Arial,
+        sans-serif;
+
+
+}
+
+
+
+#mycompany {
+    width: 394px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 95px 21px 93px;
+}
+
+
+#name {
+    width: 193px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    margin: 0;
+    margin: 0 0 21px 93px;
+}
+
+#Fname {
+    width: 193px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    margin: 0;
+}
+
+
+
+
+#email {
+    width: 394px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 95px 21px 93px;
+}
+
+button {
+    background-color: #089FE0;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 398px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 95px 21px 93px;
+    padding: 0;
+}
+
+label {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'open sasn', Arial,
+        sans-serif;
+}
+
+::placeholder {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'open sasn', Arial,
+        sans-serif;
+
+}
+
+.agree {
+    margin: 0 118px 91px 93px;
+}
+
+.heroForm {
+    width: 582px;
+    height: 573px;
+    margin: 225px auto;
+    border-radius: 10px;
+    border: none;
+}
