@@ -12,37 +12,34 @@
 
 <body>
     <header>
-
         <div>
-            <img src="./9HLYgbhl3lk.jpg" alt="Буква В">
-            <a href="#">Мой блог</a>
-        </div>
-        <nav>
-            <ul>
-
-                <a href="#">
-                    <li>HTML и CSS</li>
-                </a>
-
-                <a href="#">
-                    <li>Frontend</li>
-                </a>
-
-
-                <a href="#">
-                    <li>Backend</li>
-                </a>
-            </ul>
-        </nav>
-
-        <!--Поэксперементировал с поиском гугла, чтобы пустой инпут не ставить-->
-        <form action="https://www.google.com/search">
-            <div>
-                <input type="search" placeholder="Поиск" id="search" name="q" />
-
+            <div class="logo">
+                <img src="./9HLYgbhl3lk.jpg" alt="Буква В">
+                <a href="#">Мой блог</a>
             </div>
 
-        </form>
+            <nav>
+                <ul>
+                    <a href="#">
+                        <li>HTML и CSS</li>
+                    </a>
+
+                    <a href="#">
+                        <li>Frontend</li>
+                    </a>
+
+                    <a href="#">
+                        <li>Backend</li>
+                    </a>
+                </ul>
+            </nav>
+
+            <div class="search">
+                <form action="https://www.google.com/search">
+                    <input type="search" placeholder="Поиск" id="search" name="q" />
+                </form>
+            </div>
+        </div>
 
     </header>
     <main>
@@ -55,15 +52,22 @@
                 </p>
                 <h1 class="dh1">
                     Теория цвета - Как цвет влияет на поведение потребителей </h1>
+
                 <div class="pdiv">
-                    <p class="pimg1"><img src="./pimg1.png" alt="учитель курса" align="left">
-                    <p class="ppp"> Наталья Васильевна</p>
-                    <p class="pp">Разработчик</p>
+                    <p class="pimg1"><img src="./pimg1.png" alt="учитель курса">
+                    <div>
+                        <p class="ppp"> Наталья Васильевна</p>
+                        <p class="pp">Разработчик</p>
+                    </div>
                     </p>
 
                 </div>
 
-                <p class="pimg2"><img src="./Rectangle 181.jpg" alt="Монитор с мини PC"></p>
+
+
+                <p class="pimg2">
+                    <img src="./Rectangle 181.jpg" alt="Монитор с мини PC" class="pimg3">
+                </p>
 
 
                 <div class="p1">
@@ -122,3 +126,5 @@
 </body>
 
 </html>
+
+/* Загрузка */

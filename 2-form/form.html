@@ -11,27 +11,41 @@
 </head>
 
 <body>
-    <main style="position: relative; height: 100vh;">
-        <form action="#" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-            <h1>Регистрация</h1>
-            <p>Уже есть аккаунт? <a href="№" target="_blank">Войти</a></p>
-
-            <input type="Text" placeholder="Моя компания" id="mycompany" name="name" required title="Введите компанию">
-
+    <main>
+        <form action="#" class="container">
             <div>
-                <input type="Text" placeholder="Имя" id="name" name="name" required title="Введите Имя">
+                <h1>Регистрация</h1>
+                <p>Уже есть аккаунт? <a href="№" target="_blank">Войти</a></p>
+            </div>
 
-                <input type="Text" placeholder="Фамилия" id="Fname" name="Fname" required title="Введите Фамилие">
+            <div class="containeritem">
+
+                <div class="item item1">
+                    <input type="Text" placeholder="Моя компания" id="mycompany" name="name" required
+                        title="Введите компанию">
+                </div>
+
+                <div class="item item2">
+                    <input type="Text" placeholder="Имя" id="name" name="name" required title="Введите Имя">
+                    <input type="Text" placeholder="Фамилия" id="Fname" name="Fname" required title="Введите Фамилие">
+                </div>
+
+                <div class="item item3">
+                    <input type=" email" placeholder="E-mail" id="email" name="email" required title="Введите Email">
+                </div>
+
+                <div class="item item4">
+                    <button type="submit">Зарегистрироваться</button>
+                </div>
+
+
+                <div class="item item5">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">Я прочитал и принимаю <a href="#">Условия использования</a></label>
+                </div>
             </div>
 
 
-            <input type="email" placeholder="E-mail" id="email" name="email" required title="Введите Email">
-
-            <button type="submit">Зарегистрироваться</button>
-            <div class="agree">
-                <input type="checkbox" name="agree" id="agree">
-                <label for="agree">Я прочитал и принимаю <a href="#">Условия использования</a></label>
-            </div>
         </form>
     </main>
 </body>
