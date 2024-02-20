@@ -4,16 +4,10 @@ body {
     font-family: Roboto;
     font-weight: 400;
     font-size: 16px;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 52px;
-
-}
 
 header a {
     color: white;
@@ -43,16 +37,6 @@ input::placeholder {
     color: #a3a7ae;
 }
 
-header>div {
-    max-width: 1440px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-
-
-}
-
-
 footer {
     line-height: 28px;
     letter-spacing: 0em;
@@ -61,27 +45,41 @@ footer {
 
 }
 
-section {
-    max-width: 1440px;
+.header {
+
+    display: flex;
+    align-items: center;
     margin: 0 auto;
 }
 
-.search {
-    margin-left: auto;
-    padding-right: 180px;
+.header-nav {
+    margin-left: 77px;
 }
 
-/* padding можно убрать, тогда лучше открываетсся  на мобильных, но отличие от макета происходит , чуть сдвинуто */
-.logo {
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 39px;
+    padding: 0;
+}
+
+.header-nav ul li:first-child {
+    margin-right: 13px;
+}
+
+
+.header-search {
+    margin-left: auto;
+
+}
+
+.header-logo {
     display: flex;
     align-items: center;
-    padding-left: 180px;
+    gap: 11px;
 }
 
-
-
-
-.heroP {
+.section__top {
 
     color: #a3a7ae;
     font-size: 14px;
@@ -92,7 +90,7 @@ section {
 
 }
 
-.dh1 {
+.section__h1 {
     font-size: 24px;
     line-height: 38px;
     letter-spacing: 0em;
@@ -103,32 +101,21 @@ section {
 
 }
 
-.d1 {
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.pimg {
-    text-align: center;
-    margin: 0 auto 28px;
-}
-
-.pimg1 {
+.section-author__img {
     margin: 0;
 }
 
-.pimg2 {
+.section-img {
     text-align: center;
     margin: 0 auto 69px;
 
 }
 
-.pimg3 {
+.section-img__heroimg {
     border-radius: 10px;
 }
 
-.pimg2+.p1 {
+.section-img+.section__p1 {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0em;
@@ -138,38 +125,31 @@ section {
 }
 
 
-.p2 {
+.section__p2 {
     line-height: 30px;
     letter-spacing: 0em;
     width: 708px;
     height: 281px;
     margin: auto;
-
-
 }
 
-
-.pdiv {
+.section-author {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
     margin-bottom: 31px;
-}
-
-
-.ppp {
     line-height: 28px;
-    margin: 0;
-
 }
 
-.pp {
+.section-author__namesurname {
+    margin: 0;
+}
+
+.section-author__post {
     color: #949eb4;
     font-size: 14px;
-    line-height: 28px;
     margin: 0;
-
 }
 
-/* загрузка */
+/* загрузка - эт я мзменения вносил чтобы в ворке отобразилось. А то сложности возникли после того как замерджил ветку CSS но изменения после мерджа еще вносил) */

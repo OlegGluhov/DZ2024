@@ -3,8 +3,7 @@ body {
         linear-gradient(243.18deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0) 100%),
         linear-gradient(243.43deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0) 82.03%);
     margin: 0;
-    font-family: 'open sasn', Arial,
-        sans-serif;
+    font-family: 'open-sans', sans-serif;
     font-weight: 400;
 }
 
@@ -19,51 +18,10 @@ main {
 }
 
 
-h1 {
-    color: #333333;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 49.03px;
-    margin: 0 0 6px 0;
-
-}
-
-p {
-    color: #666666;
-    font-size: 18px;
-    line-height: 26px;
-    margin: 0;
-    text-align: center;
-
-
-}
-
 a {
     color: #089FE0;
 }
 
-
-input {
-    background: #F5F5F5;
-    color: #333333;
-    font-size: 16px;
-    font-weight: 600;
-
-}
-
-button {
-    background: url(./Arrow\ 1.png) no-repeat center right 20px #089FE0;
-    color: #FFFFFF;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: center;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-    height: 44px;
-
-}
 
 label {
     color: #666666;
@@ -79,32 +37,55 @@ input::placeholder {
 
 }
 
-#mycompany,
-#email {
+input {
+    color: #000000;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    line-height: 26px;
+    border: 1px solid #f5f5f5;
+    padding: 9px 11px 9px 11px;
+}
+
+
+
+input[name='company'] {
+    background-color: #fff;
+    color: #333;
+    font-style: normal;
+    font-weight: 600;
+}
+
+input[name="company"]::placeholder {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    font-style: normal;
+
+}
+
+input[type="checkbox"] {
+    width: unset;
+    margin: 0;
+}
+
+button {
+    background: url(./Arrow\ 1.png) no-repeat center right 20px #089FE0;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
     border-radius: 5px;
     border: none;
     width: 100%;
     height: 44px;
 }
 
-#name,
-#Fname {
-    width: calc(100% / 2 - 1px);
-    height: 44px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: none;
-    padding: 0;
-
-
-}
-
-#Fname {
-    margin-left: -3px;
-}
-
-
-.container {
+.Formregistr {
     background-color: #FFFEFE;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     position: absolute;
@@ -122,25 +103,44 @@ input::placeholder {
     padding: 72px 95px 91px 93px;
     max-width: 582px;
     min-width: 360px;
-    /* width: 582px;
-    min-width: 375px;
-    height: 573px; */
-    /* margin: 0 auto; */
 }
 
-.containeritem {
+.Formregistr__h1 {
+    color: #333333;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.03px;
+    margin: 0;
+}
+
+.Formregistr__top {
+    color: #666666;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+.Formregistr-item {
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
     gap: 22px;
-    /* justify-content: center;
-    align-items: center; */
+
 }
 
-/* .item2 {
-    width: 100%;
-} */
 
-#agree {
-    margin: 0;
+.Formregistr-item__item2 {
+    display: flex;
+    gap: 1px;
+}
+
+.item2__firstname {
+    border-radius: 5px 0 0 5px;
+}
+
+.item2__surname {
+    border-radius: 0 5px 5px 0;
 }

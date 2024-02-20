@@ -7,39 +7,46 @@
     <meta name="author" content="Олег Глухов">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="./styleform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+        rel="stylesheet">
     <title>1-form</title>
 </head>
 
 <body>
     <main>
-        <form action="#" class="container">
+        <form action="#" class="Formregistr">
             <div>
-                <h1>Регистрация</h1>
-                <p>Уже есть аккаунт? <a href="№" target="_blank">Войти</a></p>
+                <h1 class="Formregistr__h1">Регистрация</h1>
+                <p class="Formregistr__top">Уже есть аккаунт? <a href="№" target="_blank">Войти</a></p>
             </div>
 
-            <div class="containeritem">
+            <div class="Formregistr-item">
 
-                <div class="item item1">
-                    <input type="Text" placeholder="Моя компания" id="mycompany" name="name" required
+                <div class="Formregistr-item__item1">
+                    <input type="Text" placeholder="Мой компания" id="company" name="company" required
                         title="Введите компанию">
                 </div>
 
-                <div class="item item2">
-                    <input type="Text" placeholder="Имя" id="name" name="name" required title="Введите Имя">
-                    <input type="Text" placeholder="Фамилия" id="Fname" name="Fname" required title="Введите Фамилие">
+                <div class="Formregistr-item__item2">
+                    <input type="Text" placeholder="Имя" id="name" name="name" required title="Введите Имя"
+                        class="item2__firstname">
+                    <input type="Text" placeholder="Фамилия" id="Fname" name="Fname" required title="Введите Фамилие"
+                        class="item2__surname">
                 </div>
 
-                <div class="item item3">
-                    <input type=" email" placeholder="E-mail" id="email" name="email" required title="Введите Email">
+                <div class="Formregistr-item__item3">
+                    <input type="email" placeholder="E-mail" id="email" name="email" required title="Введите Email">
                 </div>
 
-                <div class="item item4">
+                <div class="Formregistr-item__Button">
                     <button type="submit">Зарегистрироваться</button>
                 </div>
 
 
-                <div class="item item5">
+                <div class="Formregistr-item__checkbox">
                     <input type="checkbox" name="agree" id="agree">
                     <label for="agree">Я прочитал и принимаю <a href="#">Условия использования</a></label>
                 </div>

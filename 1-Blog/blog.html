@@ -12,29 +12,30 @@
 
 <body>
     <header>
-        <div>
-            <div class="logo">
+        <div class="header">
+            <div class="header-logo">
                 <img src="./9HLYgbhl3lk.jpg" alt="Буква В">
                 <a href="#">Мой блог</a>
             </div>
 
-            <nav>
+            <nav class="header-nav">
                 <ul>
-                    <a href="#">
-                        <li>HTML и CSS</li>
-                    </a>
 
-                    <a href="#">
-                        <li>Frontend</li>
-                    </a>
+                    <li><a href="#">
+                            HTML и CSS
+                        </a></li>
 
-                    <a href="#">
-                        <li>Backend</li>
-                    </a>
+                    <li><a href="#">
+                            Backend
+                        </a></li>
+
+                    <li><a href="#">
+                            Frontend
+                        </a></li>
                 </ul>
             </nav>
 
-            <div class="search">
+            <div class="header-search">
                 <form action="https://www.google.com/search">
                     <input type="search" placeholder="Поиск" id="search" name="q" />
                 </form>
@@ -44,33 +45,28 @@
     </header>
     <main>
         <article>
-
-
-
-            <section>
-                <p class="heroP">FRONTEND &#149; 12 мая 2024
+            <section class="section">
+                <p class="section__top">FRONTEND &#149; 12 мая 2024
                 </p>
-                <h1 class="dh1">
+                <h1 class="section__h1">
                     Теория цвета - Как цвет влияет на поведение потребителей </h1>
 
-                <div class="pdiv">
-                    <p class="pimg1"><img src="./pimg1.png" alt="учитель курса">
+                <div class="section-author">
+                    <img src="./pimg1.png" alt="учитель курса" class="section-author__img">
+
                     <div>
-                        <p class="ppp"> Наталья Васильевна</p>
-                        <p class="pp">Разработчик</p>
+                        <p class="section-author__namesurname"> Наталья Васильевна</p>
+                        <p class="section-author__post">Разработчик</p>
                     </div>
-                    </p>
 
                 </div>
 
+                <div class="section-img">
+                    <img src="./Rectangle 181.jpg" alt="Монитор с мини PC" class="section-img__heroimg">
+                </div>
 
 
-                <p class="pimg2">
-                    <img src="./Rectangle 181.jpg" alt="Монитор с мини PC" class="pimg3">
-                </p>
-
-
-                <div class="p1">
+                <div class="section__p1">
                     <p>Теория цвета — это особенности эмоционального восприятия человеком тех или иных цветовых
                         решений.
                         Цвета и
@@ -87,9 +83,7 @@
                         конверсию.</p>
                 </div>
 
-
-
-                <div class="p2">
+                <div class="section__p2">
                     <p>Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет.
                         Эмоциональная и
                         поведенческая
@@ -126,5 +120,3 @@
 </body>
 
 </html>
-
-/* Загрузка */
