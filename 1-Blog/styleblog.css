@@ -4,12 +4,10 @@ body {
     font-family: Roboto;
     font-weight: 400;
     font-size: 16px;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
-nav ul {
-    list-style: none;
-}
 
 header a {
     color: white;
@@ -21,12 +19,12 @@ header a {
 }
 
 header {
-    margin: 78px 0 73px 180px;
+    margin: 78px 0 73px;
 }
 
 input {
     background: url(./icon.png) no-repeat center left 20px #1F293799;
-    position: relative;
+    /* position: relative; */
     outline: none;
     border: none;
     padding: 11px 12px 11px 49px;
@@ -35,12 +33,53 @@ input {
 
 }
 
-
 input::placeholder {
     color: #a3a7ae;
 }
 
-.heroP {
+footer {
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 103px auto 77px;
+
+}
+
+.header {
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-nav {
+    margin-left: 77px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 39px;
+    padding: 0;
+}
+
+.header-nav ul li:first-child {
+    margin-right: 13px;
+}
+
+
+.header-search {
+    margin-left: auto;
+
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.section__top {
 
     color: #a3a7ae;
     font-size: 14px;
@@ -51,7 +90,7 @@ input::placeholder {
 
 }
 
-.dh1 {
+.section__h1 {
     font-size: 24px;
     line-height: 38px;
     letter-spacing: 0em;
@@ -62,23 +101,21 @@ input::placeholder {
 
 }
 
-.d1 {
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: center;
+.section-author__img {
+    margin: 0;
 }
 
-.pimg {
-    text-align: center;
-    margin: 0 auto 28px;
-}
-
-.pimg2 {
+.section-img {
     text-align: center;
     margin: 0 auto 69px;
+
 }
 
-.pimg2+.p1 {
+.section-img__heroimg {
+    border-radius: 10px;
+}
+
+.section-img+.section__p1 {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0em;
@@ -88,51 +125,31 @@ input::placeholder {
 }
 
 
-.p2 {
+.section__p2 {
     line-height: 30px;
     letter-spacing: 0em;
     width: 708px;
     height: 281px;
     margin: auto;
-
-
 }
 
-
-
-.pdiv {
-    /* не совсем понимаю что дает mix/max , когда много текста вставляеш все равно за границы вылазиет */
-    min-width: 214px;
-    min-height: 53px;
-    max-width: 214px;
-    max-height: 53px;
-    /* это я исправил сразу после того как закомитил) начал масштабировать окно браузера и ужаснулся) */
-    margin: 0 auto 28px;
-    padding: 0 0 0 65px;
-
-}
-
-
-
-
-.ppp {
+.section-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 31px;
     line-height: 28px;
-    padding: 0 0 0 60px;
+}
+
+.section-author__namesurname {
     margin: 0;
 }
 
-.pp {
+.section-author__post {
     color: #949eb4;
     font-size: 14px;
-    line-height: 28px;
     margin: 0;
-    padding: 0 0 0 60px;
 }
 
-footer {
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin: 103px auto 77px;
-
-}
+/* загрузка - эт я мзменения вносил чтобы в ворке отобразилось. А то сложности возникли после того как замерджил ветку CSS но изменения после мерджа еще вносил) */
