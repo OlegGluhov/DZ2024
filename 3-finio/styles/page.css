@@ -1,4 +1,4 @@
-.hero__wrapper {
+.hero {
     max-width: var(--layout-width-hero);
     margin: 0 auto;
     /* transform: skewY(7deg); */
@@ -8,7 +8,7 @@
 
 
 
-.hero {
+.hero__wrapper {
 
     /* margin: 0 auto; */
     display: flex;
@@ -34,7 +34,7 @@
 }
 
 @media(max-width:480px) {
-    .hero {
+    .hero__wrapper {
         justify-content: start;
     }
 
@@ -87,8 +87,10 @@
         margin-top: 56px;
     }
 
-    .section-light_header {
-        background-image: linear-gradient(175deg, var(--color-primary)80%, white 40%);
+    .section__header_light {
+        /* background-image: linear-gradient(175deg, var(--color-primary)80%, white 40%); */
+
+        background-image: linear-gradient(175deg, var(--color-primary), var(--color-primary) 80%, white calc(80% + 1px));
         /* clip-path: polygon(0 0, 100% 0%, 100% 47%, 0 93%); */
     }
 
@@ -113,7 +115,7 @@
     max-width: var(--layout-width-hero);
     display: flex;
     /* align-items: center; */
-    gap: 16px;
+    gap: 16px 50px;
     ;
     /* padding-left: 230px; */
     margin: 0 auto;
@@ -374,6 +376,72 @@
 
 .save__imag {
     margin-top: 64px;
+}
+
+
+
+
+
+
+
+.comparison-image {
+    position: relative;
+    margin-top: 54px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--color-text-primary);
+        width: 2px;
+        height: 100%;
+        z-index: 3;
+    }
+
+    &::before {
+        content: url('../images/icons/sliderlist.png');
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+    }
+}
+
+.comparison-image__image {
+    width: 100%;
+    display: block;
+
+}
+
+.comparison-image__before {
+    z-index: 1;
+    border-radius: 16px;
+}
+
+.comparison-image__after {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    z-index: 2;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 16px 0 0 16px;
+
+    .comparison-image__image {
+        width: 200%;
+    }
+}
+
+
+@media(max-width:480px) {
+    .comparison-image {
+
+        margin-top: 38px;
+    }
 }
 
 /* card */
