@@ -17,7 +17,11 @@
     margin-top: 120px;
 }
 
-
+@media(max-width:480px) {
+    .section-mobile {
+        margin-top: 64px;
+    }
+}
 
 .section__header_light {
     /* background-image: linear-gradient(173deg, var(--color-primary) 65%, white calc(65% + 1px)); */
@@ -165,6 +169,7 @@
     font-weight: 500;
     line-height: 100%;
     padding: 8px 0;
+    white-space: nowrap;
 }
 
 
@@ -293,6 +298,7 @@
     text-align: center;
     padding: 0 24px;
 }
+
 
 /* support */
 
