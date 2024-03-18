@@ -13,7 +13,8 @@
     /* margin: 0 auto; */
     display: flex;
     justify-content: space-between;
-    padding: 40px 24px;
+    padding: 0px 24px 80px 24px;
+
 }
 
 
@@ -36,6 +37,7 @@
 @media(max-width:480px) {
     .hero__wrapper {
         justify-content: start;
+        padding: 0px 24px 32px 24px;
     }
 
 
@@ -53,7 +55,17 @@
 }
 
 
+.h1_nowrap {
+    white-space: nowrap;
+}
 
+@media(max-width:480px) {
+    .h1_nowrap {
+        white-space: wrap;
+    }
+
+
+}
 
 .hero__logos {
     margin-top: 80px;
@@ -90,12 +102,31 @@
     .section__header_light {
         /* background-image: linear-gradient(175deg, var(--color-primary)80%, white 40%); */
 
-        background-image: linear-gradient(175deg, var(--color-primary), var(--color-primary) 80%, white calc(80% + 1px));
+        background-image: linear-gradient(175deg, var(--color-primary), var(--color-primary) 85%, white calc(85% + 1px));
         /* clip-path: polygon(0 0, 100% 0%, 100% 47%, 0 93%); */
     }
 
 }
 
+
+.hero__left {
+    margin-top: 75px;
+}
+
+
+.hero__right {
+    margin-top: 58px;
+}
+
+
+
+@media(max-width:480px) {
+    .hero__left {
+        margin-top: 32px;
+    }
+
+
+}
 
 
 .hero__advantages-frame {
@@ -108,6 +139,14 @@
     /* padding: 0 20px; */
     margin-bottom: 80px;
     /* margin-top: 40px; */
+
+}
+
+@media(max-width:480px) {
+    .hero__advantages-frame {
+        margin-bottom: 48px;
+
+    }
 
 }
 
@@ -387,6 +426,7 @@
 .comparison-image {
     position: relative;
     margin-top: 54px;
+    margin-left: 35px;
 
     &::after {
         content: '';
@@ -425,6 +465,9 @@
 
 }
 
+
+
+
 /* Комментарием выделил это 2ой способ убрать ступеньку */
 
 .comparison-image__after {
@@ -440,13 +483,23 @@
     border-radius: 16px 0 0 16px;
 }
 
+@media(max-width:1200px) {
+    .comparison-image {
+        margin-left: 0px;
+
+    }
+}
+
 
 @media(max-width:480px) {
     .comparison-image {
-
+        margin-left: 0px;
         margin-top: 38px;
     }
 }
+
+
+
 
 /* card */
 .card_wrapper {
@@ -588,6 +641,12 @@
     margin-bottom: 80px;
 }
 
+@media(max-width:1050px) {
+    .advantages-centr {
+
+        gap: 32px;
+    }
+}
 
 @media(max-width:480px) {
 
@@ -597,6 +656,8 @@
         margin-bottom: 48px;
     }
 }
+
+
 
 
 /* support */
