@@ -116,9 +116,12 @@
 
 .hero__right {
     margin-top: 58px;
+    overflow: visible;
 }
 
-
+.hero__right img {
+    overflow: visible;
+}
 
 @media(max-width:480px) {
     .hero__left {
@@ -205,6 +208,10 @@
 
 }
 
+
+.advantages__logo img {
+    display: block;
+}
 
 
 /* statistics */
