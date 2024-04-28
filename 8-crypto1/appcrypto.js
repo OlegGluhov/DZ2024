@@ -1,37 +1,27 @@
-const password = `password`;
+const userPassword = `superpas`;
+
+function crypto(password) {
+    const arrayPassword = password.split(``);
+    const reversePasOne = arrayPassword.splice(1, 5).reverse();
+    const reversePasTwo = arrayPassword.splice(1, 2).reverse();
+    arrayPassword.splice(1, 0, reversePasOne.join(''));
+    arrayPassword.splice(1, 0, reversePasTwo.join(''));
+    return arrayPassword.join('');
+}
+console.log(`CryptoPassword: ${crypto(userPassword)}`);
 
 
-function shifrPs(ps) {
-    const shifr = ps.split(``);
+const cryptoPassword = `ssaprepu`;  //crypto(userPassword) - можно сделать так. Ввел строкой чтобы можно было проверить(если ввести что либо другое)
 
-    const rez = shifr.splice(2, 3);
+function check(cryptoPasswordCheck, userPasswordCheck) {
 
-    const rezSp = rez.join(``);
+    if (cryptoPasswordCheck.length != userPasswordCheck.length) {
+        return false;
+    }
 
-    shifr.unshift(rezSp);
-    return shifr.join('');
+    return crypto(cryptoPasswordCheck) === userPassword;
+
 }
 
-console.log(shifrPs(password));
+console.log(`Match? ${check(cryptoPassword, userPassword)}`);
 
-
-const shifrPassword = `sswpaord`;
-
-function unShifrPs(ups) {
-    const unshifr = ups.split(``);
-
-    const unrez = unshifr.splice(0, 3);
-
-    const unrezSp = unrez.join(``);
-
-    unshifr.splice(2, 0, unrezSp);
-
-    const deshifr = unshifr.join('')
-
-    if (deshifr === password) {
-
-        console.log(true);
-    } else { console.log(false) }
-
-}
-unShifrPs(shifrPassword);
